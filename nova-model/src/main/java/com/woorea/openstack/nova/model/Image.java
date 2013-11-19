@@ -34,6 +34,8 @@ public class Image implements Serializable {
 		
 	private List<Link> links;
 
+	private Server server;
+	
 	/**
 	 * @return the id
 	 */
@@ -139,6 +141,9 @@ public class Image implements Serializable {
 		return updated;
 	}
 
+	public Server getServer() {
+	    return server;
+	}
 	/**
 	 * @param updated the updated to set
 	 */
@@ -181,6 +186,10 @@ public class Image implements Serializable {
 		this.links = links;
 	}
 
+	public void setServer(Server server) {
+	    this.server = server;
+	}
+	
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
